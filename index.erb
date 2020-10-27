@@ -1,0 +1,43 @@
+requrie 'erb'
+
+name = 
+gets.chomp()
+
+class BirthdayAlert
+    def initialize
+    @name = name
+    @dob = birthdate
+    end
+
+<% if birthdate == current_date %>
+    puts 'Happy birthday #{name}
+<% end %>
+
+def birthdate()
+dob = 'Enter date of birth!(DD,MM,YY)'
+    gets.chomp()
+end
+
+
+name = 
+    gets.chomp
+dob = %d-%m-%y
+gets.chomp
+
+
+def current_date
+time = Time.new 
+
+time.strftime('%d-%m-%y')
+
+end
+
+def happy_birthday
+     if user_birthday == current_date
+        p 'Happy birthday #{name}!'
+    else
+        'move along matey'
+end
+
+
+end
